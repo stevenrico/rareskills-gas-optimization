@@ -6,6 +6,7 @@ import { Storage } from "../src/Storage.sol";
 import { Add } from "../src/Add.sol";
 import { DoNothing } from "../src/DoNothing.sol";
 import { StorageOperations } from "../src/StorageOperations.sol";
+import { SameValue } from "../src/SameValue.sol";
 
 contract DeployScript is Script {
   function run() public {
@@ -17,6 +18,7 @@ contract DeployScript is Script {
     new Add();
     new DoNothing();
     new StorageOperations();
+    new SameValue();
 
     vm.stopBroadcast();
   }
