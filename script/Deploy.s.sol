@@ -5,6 +5,7 @@ import { Script } from "forge-std/Script.sol";
 import { Storage } from "../src/Storage.sol";
 import { Add } from "../src/Add.sol";
 import { DoNothing } from "../src/DoNothing.sol";
+import { StorageOperations } from "../src/StorageOperations.sol";
 
 contract DeployScript is Script {
   function run() public {
@@ -15,6 +16,7 @@ contract DeployScript is Script {
     new Storage();
     new Add();
     new DoNothing();
+    new StorageOperations();
 
     vm.stopBroadcast();
   }
