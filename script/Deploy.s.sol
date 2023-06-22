@@ -8,6 +8,7 @@ import { DoNothing } from "../src/DoNothing.sol";
 import { StorageOperations } from "../src/StorageOperations.sol";
 import { SameValue } from "../src/SameValue.sol";
 import { Arrays } from "../src/Arrays.sol";
+import { Refunds } from "../src/Refunds.sol";
 
 contract DeployScript is Script {
   function run() public {
@@ -21,6 +22,7 @@ contract DeployScript is Script {
     new StorageOperations();
     new SameValue();
     new Arrays();
+    new Refunds();
 
     vm.stopBroadcast();
   }
