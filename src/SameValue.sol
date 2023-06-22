@@ -6,8 +6,8 @@ contract SameValue {
 
   /**
    * [DESCRIPTION]    [TOTAL]     [NO TX]     [DIFF]
-   * 5 => 5:          23_638      2_638       +105
-   * 5 => 10:         26_438      5_438       -4
+   * 5 => 5:          23_638       2_638      + 105
+   * 5 => 10:         26_438       5_438      -   4
    */
   function setValue(uint256 newValue) external {
     _value = newValue;
@@ -15,8 +15,8 @@ contract SameValue {
 
   /**
    * [DESCRIPTION]    [TOTAL]     [NO TX]     [DIFF]
-   * 5 => 5:          23_533      2_533       -105
-   * 5 => 10:         26_442      5_442       +4
+   * 5 => 5:          23_533       2_533      - 105
+   * 5 => 10:         26_442       5_442      +   4
    */
   function setValueWithChecks(uint256 newValue) external {
     uint256 value = _value;
