@@ -12,6 +12,7 @@ import { Refunds } from "../src/Refunds.sol";
 import { Structs } from "../src/Structs.sol";
 import { Packing } from "../src/Packing.sol";
 import { ArrayCache } from "../src/ArrayCache.sol";
+import { Memory } from "../src/Memory.sol";
 
 contract DeployScript is Script {
   function run() public {
@@ -29,6 +30,7 @@ contract DeployScript is Script {
     new Structs();
     new Packing();
     new ArrayCache();
+    new Memory();
 
     vm.stopBroadcast();
   }
