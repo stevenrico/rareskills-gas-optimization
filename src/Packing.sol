@@ -48,7 +48,7 @@ contract Packing {
     uint128 timestamp;
   }
 
-  mapping(address => Stake) _stakedAccounts;
+  mapping(address => Stake) private _stakedAccounts;
 
   /**
    * [DESCRIPTION]    [GAS COST]     [SUBTOTAL]
