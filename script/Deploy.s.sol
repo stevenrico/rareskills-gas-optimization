@@ -11,6 +11,7 @@ import { Arrays } from "../src/Arrays.sol";
 import { Refunds } from "../src/Refunds.sol";
 import { Structs } from "../src/Structs.sol";
 import { Packing } from "../src/Packing.sol";
+import { ArrayCache } from "../src/ArrayCache.sol";
 
 contract DeployScript is Script {
   function run() public {
@@ -27,6 +28,7 @@ contract DeployScript is Script {
     new Refunds();
     new Structs();
     new Packing();
+    new ArrayCache();
 
     vm.stopBroadcast();
   }
