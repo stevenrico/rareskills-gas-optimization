@@ -10,6 +10,7 @@ import { SameValue } from "../src/SameValue.sol";
 import { Arrays } from "../src/Arrays.sol";
 import { Refunds } from "../src/Refunds.sol";
 import { Structs } from "../src/Structs.sol";
+import { Packing } from "../src/Packing.sol";
 
 contract DeployScript is Script {
   function run() public {
@@ -25,6 +26,7 @@ contract DeployScript is Script {
     new Arrays();
     new Refunds();
     new Structs();
+    new Packing();
 
     vm.stopBroadcast();
   }
